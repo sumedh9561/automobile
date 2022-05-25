@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+    <h1>Automobile inheritance</h1>
+    <h2>Check the console for inheritance</h2>
+</body>
+
+</html>
+<script>
+    function automobile(b, m) {
+        this.brand = b;
+        this.mileage = m;
+    }
+    var obj1 = new automobile("maruti", 120000);
+    console.log(obj1);
+    var baleno = Object.create(obj1);
+    baleno.color = "black";
+    baleno.price = 120000;
+    var santro = Object.create(obj1);
+    santro.color = "white";
+    santro.price = "60000";
+
+    console.log(baleno, santro);
+
+
+
+</script>
